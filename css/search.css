@@ -1,0 +1,27 @@
+#search-filter-icon {
+    cursor: pointer;
+}
+.filter-column {
+    
+    display: none;
+}
+.filter-column span:hover {
+    color: #4d50649c;
+}
+h4 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+@media (max-width: 766px){
+    .card .card-horizontal .card-icons img {
+        width: 100%;
+    }
+    .card .card-horizontal time {
+        left : 10px;
+    }
+    .card .card-horizontal .fa-play {
+        right:48%;
+    }
+}

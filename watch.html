@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>watch</title>
+  <link rel="stylesheet" href="css/bootstrap-rtl.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/watch.css">
+
+</head>
+
+<body class="mt-5 rtl">
+  <div class="layer"></div>
+  <!--start header-->
+  <div id="top-menu">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <i class="fas fa-bars fa-lg" id="toggler"></i>
+        <b>
+          <a class="navbar-brand" href="index.html">
+            برمجة لايف
+            <span class="icon-video"><i class="far fa-heart"></i></span>
+          </a>
+        </b>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav mx-lg-auto">
+            <li class="nav-item first-list-element">
+              <a class="nav-link px-3 ml-1 " href="channel.html">الفديوهات المقترحة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  px-3 ml-1 ml-lg-3" href="search.html">المرفوعة حديثا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3 ml-1" href="watch.html" tabindex="-1">القديوهات الرائجة</a>
+            </li>
+            <li class="nav-item">
+            </li>
+          </ul>
+          <div class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button onclick="location.href='Search.html';" class="btn btn-outline-success my-2 my-sm-0"
+              type="submit">ابحث</button>
+          </div>
+
+        </div>
+        <i class="fas fa-search m4-r search-icon"></i>
+        <a class="nav-link login" href="#" data-toggle="modal" data-target="#login">تسجيل الدخول</a>
+      </nav>
+      <input type="search" class="form-control search-input" placeholder="ابحث عن ...">
+      <!--end header-->
+      <!--start Modal -->
+      <div class="modal fade" id="login" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="email" class="col-form-label">البريد الإلكتروني</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                  <label for="password" class="col-form-label">كلمة المرور:</label>
+                  <input type="password" class="form-control" id="password">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <a href="">نسيت كلمة المرور</a>
+              <a href="" class="mx-auto">انشاء حساب</a>
+              <button type="button" class="btn btn-primary">دخول</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end Modal -->
+      <!--start sidebar-->
+      <div class="row pt-4">
+        <div id="wrap">
+          <div class="sidebar">
+            <ul class="list-group list-group-flush pl-0">
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <li class="fas fa-home mr-2 purple"></li>الصفحة الرئيسية
+              </a>
+              <a href="channel.html" class="list-group-item list-group-item-action">
+                <li class="fas fa-home mr-2 purple"></li>الفديوهات المقترحة
+              </a>
+              <a href="search.html" class="list-group-item list-group-item-action">
+                <li class="fas fa-home mr-2 purple"></li>المرفوعة حديثا
+                <a href="watch.html" class="list-group-item list-group-item-action">
+                  <li class="fas fa-home mr-2 purple"></li>الفديوهات الرائجة
+                </a>
+                <a href="index.html" class="list-group-item list-group-item-action">
+                  <li class="fas fa-home mr-2 purple"></li>...........
+                </a>
+                <a href="index.html" class="list-group-item list-group-item-action">
+                  <li class="fas fa-home mr-2 purple"></li>...........
+                </a>
+                <a href="index.html" class="list-group-item list-group-item-action">
+                  <li class="fas fa-home mr-2 purple"></li>...........
+                </a>
+                <a href="" class="list-group-item list-group-item-action"> 2018 موسوعة في عالم البرمجة <br> برمجة لايف
+                  &copy;</a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--end Modal -->
+    </div>
+  </div>
+  <!--start watch content-->
+  <div class="watch-page pt-5">
+    <div class="container-fluid">
+      <!--start section vedio-->
+      <div class="card border-0 card-vedio">
+        <div class="row px-2">
+          <div class="col-md-7">
+            <video controls muted autoplay class="w-100">
+              <source src="video/prog.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="col-md-5">
+            <small class="text-muted ">
+              <i class="fas fa-film"></i><span>2 آلاف مشاهدة</span>
+              <i class="far fa-clock"></i><span>قبل 8 اشهر</span>
+              <a href="channel.html" class="channel.img">
+                <img src="img/logo-mariam.png" alt="channel-img" class="rounded-circle my-2 mx-2" width="30">
+                <span class="card-text"> برمجة لايف</span>
+              </a>
+            </small>
+            <div class="card-block">
+              <a href="watch.html">
+                <h4 class="card-title mb-1">ادوات تطوير البرامج</h4>
+              </a>
+              <p class="card-text">ادوات دوات تطوير البرامج ادوات تطوير البرامج البرامج <span id="dots"> ...</span>
+                <span id="more"> دوات تطوير البرامج ادوات تطوير البرامج دوات تطوير البرامج ادوات تطوير البرامج دوات
+                  تطوير البرامج ادوات تطوير البرامج دوات تطوير البرامج ادوات تطوير البرامج دوات تطوير البرامج ادوات
+                  تطوير البرامج ا</span> </p>
+            </div>
+            <div> <button type="button" class="btn mb-4 mt-2 myBtn" id="myBtn">عرض المزيد</button></div>
+
+            <div class="watch-icon mt">
+              <i class="far fa-heart bg-secondary rounded-circle m-1 p-1 text-white" title="احببته"></i>
+              <i class="far fa-clock bg-secondary rounded-circle m-1 p-1 text-white" title="المشاهدة لاحقا"></i>
+              <i class="far fa-share-square bg-secondary rounded-circle m-1 p-1 text-white" title="المشاركة"></i>
+              <i class="far fa-play-circle bg-secondary rounded-circle m-1 p-1 text-white"
+                title=" اضافة لقائمة التشغيل"></i>
+              <span class="ml-3">ابلاغ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end section vedio-->
+      <!--start comments-->
+      <div class="row mt-5 px-2">
+        <div class="col-lg-7 order-2 order-lg-1">
+          <div class=comments>
+            <div class="comment-details mb-2">
+              <span>الإقتراحات</span>
+              <span class="dropdown  ml-2">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  التعليقات بحسب
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">التاريخ</a>
+                  <a class="dropdown-item" href="#">التعليقات الأحدث</a>
+                </div>
+              </span>
+            </div>
+            <div class="public-comments">
+              <div class="form-group">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
+                  placeholder="اضافة تعليق"></textarea>
+                <button type="submit" class="btn btn-info mt-2">تعليق</button>
+
+                <div class="card my-3">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-2">
+                        <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid" />
+                        <p class="text-secondary text-center">منذ 40 دقيقة </p>
+                      </div>
+                      <div class="col-10">
+                        <p>
+                          <a class="float-right mt-3" href="#"><strong>محمد علي </strong></a>
+                          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                        </p>
+                        <div class="clearfix"></div>
+                        <p>مرحبا.. شكرا على هذه المحتوى الرائع</p>
+                        <a class="float-right  text-white btn btn-info mr-2 respond"> <i class="fa fa-reply "></i>
+                          الردود</a>
+                        <a class="float-right  text-white btn btn-info"> <i class="fa fa-heart"></i> اعجبني</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card card-inner ml-4 mt-3">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-2 ">
+                            <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid" />
+                            <p class="text-secondary text-center reply-time">منذ 20 دقيقة </p>
+                          </div>
+                          <div class="col-10">
+                            <p><a href="#"> <strong> برمجة لايف</strong></a></p>
+                            <p>اهلاً .. سعيدون بذلك</p>
+                            <p>
+                              <a class="float-right  text-white btn btn-info  mt-4"> <i class="fa fa-heart"></i>
+                                اعجبني</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card my-3">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-2">
+                        <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid" />
+                        <p class="text-secondary text-center">منذ 40 دقيقة </p>
+                      </div>
+                      <div class="col-10">
+                        <p>
+                          <a class="float-right mt-3" href="#"><strong>محمد علي </strong></a>
+                          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                          <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                        </p>
+                        <div class="clearfix"></div>
+                        <p>مرحبا.. شكرا على هذه المحتوى الرائع</p>
+                        <p>
+                          <a class="float-right  text-white btn btn-info mr-2 respond"> <i class="fa fa-reply "></i>
+                            الردود</a>
+                          <a class="float-right  text-white btn btn-info"> <i class="fa fa-heart"></i> اعجبني</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card card-inner ml-4 mt-3">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-2">
+                            <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid" />
+                            <p class="text-secondary text-center reply-time">منذ 20 دقيقة </p>
+                          </div>
+                          <div class="col-10">
+                            <a href="#"> <strong>برمجة لايف</strong></a>
+                            <p>اهلاً .. سعيدون بذلك</p>
+                            <p>
+                              <a class="float-right  text-white btn btn-info  mt-3"> <i class="fa fa-heart"></i>
+                                اعجبني</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 order-1 order-lg-2">
+          <p> الاقتراحات</p>
+          <div class="card mb-4 p-1">
+            <div class="row">
+              <div class="col-sm-5">
+                <a href="channel.html">
+                  <img class="w-100 h-100" src="img/thumbnail/htmll.jpg" alt="">
+                  <time>2:00</time>
+                  <i class="fas fa-play fa-2x"></i>
+                </a>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-block">
+                  <a href="watch.html">
+                    <p class="card-title mt-2">ادوات تطوير البرامج</p>
+                  </a>
+                  <small class="text-muted ">
+                    <i class="fas fa-film"></i><span>3 آلاف مشاهدة</span>
+                  </small>
+                  <a href="channel.html" class="channel.img d-sm-block ml-2 ml-sm-0 mt-1 ">
+                    <img src="img/logo-mariam.png" alt="channel-img" class="rounded-circle my-1 ml-0" width="30">
+                    <span class="card-text"> برمجة لايف</span>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 p-1">
+            <div class="row">
+              <div class="col-sm-5">
+                <a href="channel.html">
+                  <img class="w-100 h-100" src="img/thumbnail/restful.jpg" alt="">
+                  <time>2:00</time>
+                  <i class="fas fa-play fa-2x"></i>
+                </a>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-block">
+                  <a href="watch.html">
+                    <p class="card-title mt-2">ادوات تطوير البرامج</p>
+                  </a>
+                  <small class="text-muted ">
+                    <i class="fas fa-film"></i><span>3 آلاف مشاهدة</span>
+                  </small>
+                  <a href="channel.html" class="channel.img d-sm-block ml-2 ml-sm-0 mt-1 ">
+                    <img src="img/logo-mariam.png" alt="channel-img" class="rounded-circle my-1 ml-0" width="30">
+                    <span class="card-text"> برمجة لايف</span>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 p-1">
+            <div class="row">
+              <div class="col-sm-5">
+                <a href="channel.html">
+                  <img class="w-100 h-100" src="img/thumbnail/jss.jpg" alt="">
+                  <time>2:00</time>
+                  <i class="fas fa-play fa-2x"></i>
+                </a>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-block">
+                  <a href="watch.html">
+                    <p class="card-title mt-2">ادوات تطوير البرامج</p>
+                  </a>
+                  <small class="text-muted ">
+                    <i class="fas fa-film"></i><span>3 آلاف مشاهدة</span>
+                  </small>
+                  <a href="channel.html" class="channel.img d-sm-block ml-2 ml-sm-0 mt-1 ">
+                    <img src="img/logo-mariam.png" alt="channel-img" class="rounded-circle my-1 ml-0" width="30">
+                    <span class="card-text"> برمجة لايف</span>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 p-1">
+            <div class="row">
+              <div class="col-sm-5">
+                <a href="channel.html">
+                  <img class="w-100 h-100" src="img/thumbnail/restful.jpg" alt="">
+                  <time>2:00</time>
+                  <i class="fas fa-play fa-2x"></i>
+                </a>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-block">
+                  <a href="watch.html">
+                    <p class="card-titlemt-2 ">ادوات تطوير البرامج</p>
+                  </a>
+                  <small class="text-muted ">
+                    <i class="fas fa-film"></i><span>3 آلاف مشاهدة</span>
+                  </small>
+                  <a href="channel.html" class="channel.img d-sm-block ml-2 ml-sm-0 mt-1 ">
+                    <img src="img/logo-mariam.png" alt="channel-img" class="rounded-circle my-1 ml-0" width="30">
+                    <span class="card-text"> برمجة لايف</span>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 p-1">
+            <div class="row">
+              <div class="col-sm-5">
+                <a href="channel.html">
+                  <img class="w-100 h-100" src="img/thumbnail/htmll.jpg" alt="">
+                  <time>2:00</time>
+                  <i class="fas fa-play fa-2x"></i>
+                </a>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-block">
+                  <a href="watch.html">
+                    <p class="card-title mt-2 ">ادوات تطوير البرامج</p>
+                  </a>
+                  <small class="text-muted ">
+                    <i class="fas fa-film"></i><span>3 آلاف مشاهدة</span>
+                  </small>
+                  <a href="channel.html" class="channel.img d-sm-block ml-2 ml-sm-0 mt-1 ">
+                    <img src="img/logo-mariam.png" alt="channel-img" class="rounded-circle my-1 ml-0" width="30">
+                    <span class="card-text"> برمجة لايف</span>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end comments-->
+    </div>
+  </div>
+  <!--end watch content-->
+  <!--awesom font-->
+  <script src="https://kit.fontawesome.com/02e5697811.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/watch.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+.watch-page .card {
+    transform: translateY(0%);
+} 
+.watch-page {
+    position: relative;
+}
+.watch-page .watch-icon {
+    position: absolute;
+    bottom: 5px;
+}
+.watch-icon i:hover {
+    cursor: pointer;
+}
+.watch-page #more {
+    display: none;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+.card-inner {
+    display: none;
+}
+.public-comments .btn {
+    background-color: #4d50649c;
+    border-color: #4d50649c;
+    color: white;
+}
+.public-comments .card .btn:hover {
+    background-color: #8b8ea19c;
+    border-bottom: #8b8ea19c;
+}
+time {
+    left: 20px !important;
+}
+.watch-page .fa-play {
+    right: 45% !important;
+}
+@media (min-width: 992px){
+    time {
+        font-size: 13px;
+    }
+    .watch-page .fa-play {
+        font-size: 25px !important;
+    } 
+}
+@media (max-width: 1130px) {
+    #myBtn{
+        margin-bottom: 80px !important;
+    }
+}
+
+@media (max-width: 570px) {
+    .reply-time {
+   font-size: 10px;
+    }
+}

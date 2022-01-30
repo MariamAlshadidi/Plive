@@ -1,0 +1,49 @@
+$(document).ready(function() {
+ $("#myBtn").on(" click", function() {
+      read();
+ });
+
+ $(".respond").click(function() {
+     $(this).parents(".row").next(".card-inner").toggle();
+ });
+
+});
+
+function read () {
+var dots = document.getElementById("dots");
+var moreText = document.getElementById("more");
+var btnText =document.getElementById("myBtn");
+
+if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML ="عرض المزيد";
+    moreText.style.display = "none";
+} else 
+{
+    dots.style.display = "none";
+    btnText.innerHTML= "عرض عناصر اقل ";
+    moreText.style.display = "inline";
+}
+} 
+/*
+$(document).ready(function(){
+    $("#myBtn").on("click",function(){
+        read()
+    });
+});
+
+function read() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "عرض المزيد";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "عرض عناصر اقل";
+        moreText.style.display = "inline";
+    }
+} */

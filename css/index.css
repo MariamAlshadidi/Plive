@@ -1,0 +1,181 @@
+@font-face {
+    font-family: "cairofont";
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+#top-menu .bg-light {
+   background-color: white !important; 
+}
+body {
+    font-family: "cairofont" , Arial, sans-serif;
+    background-color: #fafafa;
+}
+a {
+    color:#333;
+    text-decoration: none !important;
+}
+button {
+    background-color: transparent !important;
+    color: #4d50649c !important;
+    border-color: #4d50649c !important;
+}
+button:hover {
+    background-color:#4d50649c !important;
+    color:white !important;
+}
+#top-menu .icon-video {
+    background-color:#4d50649c;
+    color: white;
+    border-radius: 15%;
+    padding: 2px;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .active>.nav-link {
+color: white;
+background-color: #4d50649c;
+}
+.navbar .login {
+    color: #4d50649c;
+}
+.modal .modal-header .close:hover{
+    color: #4d50649c !important;
+    background-color: transparent !important; 
+}
+input.form-control:focus,
+button:focus {
+   box-shadow: none !important; 
+}
+.card-icons{
+    position: relative;
+}
+time {
+    position: absolute;
+    bottom: 3px;
+    left: 6px;
+    background-color:rgb(47, 52, 53);
+    padding: 0px 3px;
+    color: white;
+}
+.card .fa-play{
+    position: absolute;
+    top:43%;
+    right: 41%;
+    color: #2c3131c7;
+    display: none;
+}
+.card:hover .fa-play {
+    display: inline;
+}
+.card:hover {
+    transform: translateY(-1%);
+}
+.card {
+    transition: transform .5s;
+}
+.card .card-title {
+    height: 50px;
+    overflow: hidden;
+}
+.card .card-horizontal .card-body p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-body {
+    min-width: 0;
+}
+#top-menu .fa-bars {
+    cursor: pointer;
+}
+.sidebar {
+    position: fixed;
+    z-index :4;
+    right: -17rem;
+    transition: all 0.5s ease-in-out;
+    height: 100%;
+    background-color:white ;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+.sidebar:hover {
+    overflow-y: scroll;
+}
+.sidebar .purple {
+    color: #4d50649c;
+}
+.sidebar a:hover{
+    color: white;
+    background-color: #4d50649c;
+}
+.sidebar .list-group-item:hover .purple {
+    color: white;
+}
+.sidebar .list-group-item {
+    width: 17rem;
+}
+#wrap.toggled .sidebar {
+right: 0rem;
+}
+.sidebar::-webkit-scrollbar {
+background-color: rgba(212, 208, 208, 0.952);
+width: 9px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+background-color: rgb(92, 91, 91);
+width: 9px;
+height: 50px;
+}
+.layer {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    display: none;
+}
+.navbar .search-icon {
+    color: #4d50649c;
+    cursor: pointer;
+    position: absolute;
+    left:132px;
+    padding: 15px 10px;
+    top : 8px;
+    display: none;
+}
+.navbar .search-icon:hover {
+    color: white;
+    background-color: #4d50649c;
+}
+.search-input {
+    position: fixed;
+    top: 60px;
+    padding: 6px 23px;
+    height: 60px;
+    border: none;
+    background-color: rgb(228, 228, 228);
+    display: non;
+    right: 0;
+    z-index: 1; 
+    display: none; 
+}
+.search-input:focus {
+    background-color: rgb(228, 228, 228);
+}
+.container-fulid {
+padding: 0px;
+overflow: hidden;
+}
+@media (max-width: 1115px) {
+    .navbar .collapse .form-inline {
+        display: none;
+    }
+    .navbar .search-icon{
+        display: inline;
+    }
+}
+
+@media (min-width: 1115px) {
+    .search-input {
+        display: none !important;
+    }
+}
